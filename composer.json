@@ -1,0 +1,24 @@
+{
+    "name": "jnbruno/akeed",
+    "description": "This is a boiler plate for Slim 3 that includes Twig, Flash messages, Monolog, forrest and swagger.",
+    "authors": [
+        {
+            "name": "John Noel",
+            "email": "jnbruno14@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "^3.0",    
+        "slim/twig-view": "^2.0",    
+        "slim/flash": "^0.1.0",
+        "monolog/monolog": "^1.13",
+        "chuyskywalker/rolling-curl": "3.1.0",
+        "zircote/swagger-php": "^2.0",
+        "jnbruno/forrest": "^0.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Module\\": "module"
+        }
+    }
+}
