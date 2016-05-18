@@ -17,6 +17,7 @@ This is a boiler plate for Slim 3 that includes Twig, Flash messages, Monolog, f
 ## Key files
 
 * `index.php`: Entry point to application
+* `document.php`: swagger ui documentation of application
 * `config/settings.php`: Configuration
 * `config/dependencies.php`: Services for Pimple
 * `config/middleware.php`: Application middleware
