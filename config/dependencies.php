@@ -38,14 +38,6 @@ $container['logger'] = function ($c) {
 };
 
 // -----------------------------------------------------------------------------
-// Action factories
-// -----------------------------------------------------------------------------
-$container['App\Action\Hotel'] = function ($c) use ($app){
-    return new App\Action\Hotel($app,$c->get('logger'),$c->get('multiCurl'),$c->get('db_scrape'));
-};
-
-
-// -----------------------------------------------------------------------------
 // Library
 // -----------------------------------------------------------------------------
 $container['multiCurl'] = function ($c) {
@@ -56,7 +48,7 @@ $container['multiCurl'] = function ($c) {
 // -----------------------------------------------------------------------------
 // Database Setting
 // -----------------------------------------------------------------------------
-$container['db_scrape'] = function ($c) {
+$container['database'] = function ($c) {
     $settings = $c->get('settings');
-    return new forrest($settings['db_scrape']);
+    return new forrest($settings['database']);
 };
