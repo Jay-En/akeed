@@ -12,17 +12,17 @@ if (PHP_SAPI === 'cli-server' && $_SERVER['SCRIPT_FILENAME'] !== __FILE__) {
 session_start();
 
 // Instantiate the app
-$settings = require __DIR__ . '/Config/settings.php';
+$settings = require __DIR__ . '/config/settings.php';
 $app = new \Slim\App($settings);
 
 // Set up dependencies
-require __DIR__ . '/Config/dependencies.php';
+require __DIR__ . '/config/dependencies.php';
 
 // Register middleware
-require __DIR__ . '/Config/middleware.php';
+require __DIR__ . '/config/middleware.php';
 
 // Register routes
-require __DIR__ . '/Config/routes.php';
+require __DIR__ . '/config/routes.php';
 
 // Run!
 $app->run();
