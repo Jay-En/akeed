@@ -26,7 +26,7 @@ return [
             'database_name' => 'tablename',
             'server'        => 'localhost',
             'username'      => 'root',
-            'password'      => 'leandevinc321',
+            'password'      => 'password',
             'charset'       => 'utf8',
         ]
     ],
