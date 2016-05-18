@@ -48,7 +48,7 @@ $container['multiCurl'] = function ($c) {
 // -----------------------------------------------------------------------------
 // Database Setting
 // -----------------------------------------------------------------------------
-$container['db_scrape'] = function ($c) {
+$container['database'] = function ($c) {
     $settings = $c->get('settings');
-    return new forrest($settings['db_scrape']);
+    return new forrest($settings['database']);
 };
