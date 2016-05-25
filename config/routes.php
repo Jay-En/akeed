@@ -3,7 +3,7 @@
 
 $app->group('/', function () use ($app) {
 	
-	$app->get("", 		"Module\Controller\HomeController:home");
+	$app->get("", 		"Module\Controllers\HomeController:home");
 
 
 });
@@ -11,8 +11,8 @@ $app->group('/', function () use ($app) {
 
 $app->group('/test', function () use ($app) {
 	
-	$app->get("", 	"Module\Controller\TestController:get");
-	$app->post("", 	"Module\Controller\TestController:post");
+	$app->get("", 	"Module\Controllers\TestController:get");
+	$app->post("", 	"Module\Controllers\TestController:post");
 
 
 });
