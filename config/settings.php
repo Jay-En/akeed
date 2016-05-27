@@ -30,5 +30,5 @@ return [
             'charset'       => 'utf8',
         ]
     ],
-    'base_url' => "http://localhost/my-app"
+    'base_url' => "http://localhost/akeed"
 ];
