@@ -1,9 +1,3 @@
-<?php
-
-$settings = require(__DIR__.'/config/settings.php');
-
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
