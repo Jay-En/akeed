@@ -14,7 +14,8 @@
         "monolog/monolog": "^1.13",
         "chuyskywalker/rolling-curl": "3.1.0",
         "zircote/swagger-php": "^2.0",
-        "jnbruno/forrest": "^0.0.0"
+        "jnbruno/forrest": "*",
+        "jnbruno/assent": "*"
     },
     "autoload": {
         "psr-4": {
