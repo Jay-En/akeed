@@ -21,14 +21,17 @@ return [
             'name' => 'app',
             'path' => __DIR__ . '/../log/app.log',
         ],
+        // assent settings
+        'languages' => [
+            'path' => __DIR__ . '/../translation',
+        ],
         'database' => [
             'database_type' => 'mysql',
             'database_name' => 'tablename',
             'server'        => 'localhost',
             'username'      => 'root',
             'password'      => 'password',
-            'charset'       => 'utf8',
+            'charset'       => 'utf8'
         ]
-    ],
-    'base_url' => "http://localhost/akeed"
+    ]
 ];

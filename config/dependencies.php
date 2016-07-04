@@ -40,8 +40,8 @@ $container['logger'] = function ($c) {
 // -----------------------------------------------------------------------------
 // Library
 // -----------------------------------------------------------------------------
-$container['multiCurl'] = function ($c) {
-    return new \RollingCurl\RollingCurl();
+$container['curl'] = function ($c) {
+    return new \Curl\Curl();
 };
 
 
@@ -52,3 +52,16 @@ $container['database'] = function ($c) {
     $settings = $c->get('settings');
     return new forrest($settings['database']);
 };
+
+$settings = $container->get('settings');
+assent::init($settings['coder']['path'], $supported_languages = ['EN', 'AR'], $startcode = 1000, 'EN');
+
+
+//remove if not needed
+$template['Company']['Name'] = "Company Name";
+$template['Result'] = [];
+
+assent::setResultTemplate($template, "Result");
+
+Container::set($container);
+
