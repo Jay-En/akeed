@@ -12,7 +12,6 @@
         "slim/twig-view": "^2.0",    
         "slim/flash": "^0.1.0",
         "monolog/monolog": "^1.13",
-        "chuyskywalker/rolling-curl": "3.1.0",
         "zircote/swagger-php": "^2.0",
         "jnbruno/forrest": "*",
         "jnbruno/assent": "*"
