@@ -46,12 +46,7 @@ $container['database'] = function ($c) {
 };
 
 $settings = $container->get('settings');
-assent::init($settings['coder']['path'], $supported_languages = ['EN', 'AR'], $startcode = 1000, 'EN');
-
-
-//remove if not needed
-$template['Company']['Name'] = "Company Name";
-$template['Result'] = [];
+assent::init($settings['languages']['path'], $supported_languages = ['EN', 'AR'], $startcode = 1000, 'EN');
 
 assent::setResultTemplate($template, "Result");
 
