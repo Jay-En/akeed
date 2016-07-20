@@ -13,6 +13,7 @@
         "slim/flash": "^0.1.0",
         "monolog/monolog": "^1.13",
         "zircote/swagger-php": "^2.0",
+        "illuminate/database": "*",
         "jnbruno/forrest": "*",
         "jnbruno/assent": "*"
     },

@@ -46,9 +46,8 @@ $container['database'] = function ($c) {
 };
 
 $settings = $container->get('settings');
-assent::init($settings['languages']['path'], $supported_languages = ['EN', 'AR'], $startcode = 1000, 'EN');
 
-assent::setResultTemplate($template, "Result");
+assent::init($settings['languages']['path'], $supported_languages = ['EN', 'AR'], $startcode = 1000, 'EN');
 
 Container::set($container);
 
