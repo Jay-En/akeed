@@ -14,8 +14,7 @@
         "monolog/monolog": "^1.13",
         "zircote/swagger-php": "^2.0",
         "illuminate/database": "*",
-        "jnbruno/forrest": "*",
-        "jnbruno/assent": "*"
+        "catfan/medoo": "*"
     },
     "autoload": {
         "psr-4": {

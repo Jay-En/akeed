@@ -42,7 +42,7 @@ $container['logger'] = function ($c) {
 // -----------------------------------------------------------------------------
 $container['database'] = function ($c) {
     $settings = $c->get('settings');
-    return new forrest($settings['database']);
+    return new medoo($settings['database']);
 };
 
 $settings = $container->get('settings');
