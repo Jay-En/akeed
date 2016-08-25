@@ -45,9 +45,5 @@ $container['database'] = function ($c) {
     return new medoo($settings['database']);
 };
 
-$settings = $container->get('settings');
-
-assent::init($settings['languages']['path'], $supported_languages = ['EN', 'AR'], $startcode = 1000, 'EN');
-
 Container::set($container);
 
